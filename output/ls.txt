@@ -1,0 +1,4 @@
+ls.txt
+pwd.txt
+read.txt
+tenlines.txt

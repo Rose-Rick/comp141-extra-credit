@@ -12,9 +12,11 @@ pwd > pwd.txt
 
 ls > ls.txt
 
+cp tenlines.txt copy.txt
+
 alias date="today's date (according to vm) is: '+%m/%d/%y'" | date > date.txt
 
-wc -w testfile1.txt > textcount.txt	#word count .txt file, send output to textcont
+wc -w tenlines.txt > textcount.txt	#word count testfile file, send output to textcont
 
 ps | head -n 5 > process.txt		#run ps command, read first words of output up to 5,
 						#then send that txt to process.txt
@@ -26,6 +28,6 @@ chmod 777 permissions.txt #give +rwx permissions to all groups
 
 TESTENV1="test"
 
-grep -E '^[A-Za-z]{3,}$' testfile1.txt > regex.txt #all words w/ 3+ letters
+grep -E '^[A-Za-z]{3,}$' copy.txt > regex.txt #all words w/ 3+ letters
 
 cd .. #cd back to extra-credit
