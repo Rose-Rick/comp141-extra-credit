@@ -2,11 +2,11 @@
 
 mkdir output
 
-cp testfile1.txt output/ #copy testfile into /output
+cp tenlines.txt output/ #copy tenlines into /output
 
 cd output/
 
-cat testfile1.txt > read.txt #read testfile1 and save that output to read.txt
+cat tenlines.txt > read.txt #read tenlines and save that output to read.txt
 
 pwd > pwd.txt
 
@@ -27,6 +27,5 @@ chmod 777 permissions.txt #give +rwx permissions to all groups
 TESTENV1="test"
 
 grep -E '^[A-Za-z]{3,}$' testfile1.txt > regex.txt #all words w/ 3+ letters
-
 
 cd .. #cd back to extra-credit
